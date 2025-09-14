@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .username, .password {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            display: block;
+            /*width: 300px;*/
+            padding: 10px;
+            font-size: 16px;
+            font-family: sans-serif;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: blue;
+            outline: none;
+            box-sizing: border-box;
+            /*width: 100%;*/
+            width: calc(100% - 24px);
+            /*width: -moz-calc(100% - 24px);*/
+            /*width: -webkit-calc(100% - 24px);*/
+            /*transition: all 0.3s;*/
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .username:focus, .password:focus {
+            color: white;
+            background-color: black;
+        }
+        #login {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: sans-serif;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: blue;
+            background-color: white;
+            color: blue;
+            cursor: pointer;
+            /*transition: all 0.3s;*/
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        #login:hover {
+            background-color: blue;
+            color: white;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="username">Username:
+            <br>
+        <input type="text" id="username" name="username" required placeholder="Masukkan Username" class="username">
+        </label>
+        <br>
+        <label for="password">Password:
+            <br>
+            <input type="password" required name="password" placeholder="Masukkan Password" class="password">
+        </label>
+        <br>
+        <input type="submit" value="Login" id="login" class="login">
+    </form>
+</body>
+</html>
